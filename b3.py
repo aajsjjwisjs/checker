@@ -35,7 +35,7 @@ data = {'name': {'first': name, 'last': last},
                      'postcode': postal_code}}
 
 
-lookup_binlist_api_url = "https://lookup.binlist.net/"
+lookup_binlist_api_url = "https://bins.antipublic.cc/bins/"
 
 bot_token = "6531211654:AAHUZ6UT7zJbPjZbxl5yV9H4H7YyL232eKY" #token
 bot = telebot.TeleBot(bot_token)
