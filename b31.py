@@ -150,7 +150,7 @@ def check_cards_from_file(message, cards):
                 card_type = "𝘂𝗻𝗸𝗻𝗼𝘄𝗻"
                 emoji = ''
                 
-            url = f"https://authga.replit.app/auth.php?lista={card}" #host
+            url = f"https://authga.replit.app/raven.php?lista={card}" #host
             response = session.post(url)
 
             if "Approved" in response.text:
